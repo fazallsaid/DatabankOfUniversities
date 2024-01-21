@@ -22,7 +22,7 @@ UniversitiesAPI menyediakan data lengkap tentang berbagai universitas di Indones
 | 4  | Add Universitas Baru      | POST          | /api/university/add |
 
 ## Kontribusi
-Bagi mereka yang ingin berkontribusi pada pengembangan aplikasi ini, silakan ikuti langkah-langkah di bawah ini:
+Bagi Anda yang ingin berkontribusi pada pengembangan aplikasi ini, silakan ikuti langkah-langkah di bawah ini:
 1. **Clone Repositori:**
    Lakukan cloning dari repositori ini.
    ```
