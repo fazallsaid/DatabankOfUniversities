@@ -14,7 +14,7 @@ UniversitiesAPI menyediakan data lengkap tentang berbagai universitas di Indones
 Bagi mereka yang ingin berkontribusi pada pengembangan aplikasi ini, silakan ikuti langkah-langkah di bawah ini:
 1. **Clone Repositori:** Lakukan cloning dari repositori ini.
    ```
-   git clone https://github.com/nama-username/UniversitiesAPI.git
+   git clone https://github.com/fazallsaid/UniversitiesAPI.git
    ```
 
 2. **Join Discord Server:** Bergabunglah dengan [Discord Server](https://discord.gg/YfEKyXbjFU) kami untuk mendapatkan pembaruan terbaru, berdiskusi, dan berkoordinasi dengan tim pengembangan.
