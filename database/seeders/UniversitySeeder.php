@@ -2,8 +2,9 @@
 
 namespace Database\Seeders;
 
-use Illuminate\Database\Console\Seeds\WithoutModelEvents;
+use App\Models\University;
 use Illuminate\Database\Seeder;
+use Illuminate\Database\Console\Seeds\WithoutModelEvents;
 
 class UniversitySeeder extends Seeder
 {
@@ -13,9 +14,9 @@ class UniversitySeeder extends Seeder
     public function run()
     {
         University::truncate();
-  
+
         $csvFile = fopen(base_path("database/csv/seeder.csv"), "r");
-  
+
         $firstline = true;
         while (($data = fgetcsv($csvFile, 2000, ",")) !== false) {
             if (!$firstline) {
@@ -28,7 +29,7 @@ class UniversitySeeder extends Seeder
             }
             $firstline = false;
         }
-   
+
         fclose($csvFile);
     }
 }
