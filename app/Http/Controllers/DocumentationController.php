@@ -13,4 +13,11 @@ class DocumentationController extends Controller
         ];
         return view('documentation.index', $data);
     }
+    public function usage(){
+        $title = "Documentation / All Unversities of Indonesia";
+        $data = [
+            'title' => $title,
+        ];
+        return view('documentation.pages.usage', $data);
+    }
 }

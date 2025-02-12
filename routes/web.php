@@ -16,4 +16,6 @@ use App\Http\Controllers\DocumentationController;
 */
 
 Route::get('/', [HomeController::class, 'index']);
+Route::get('/contribute', [HomeController::class, 'contribute']);
 Route::get('/docs', [DocumentationController::class, 'index']);
+Route::get('/docs/usage', [DocumentationController::class, 'usage']);
