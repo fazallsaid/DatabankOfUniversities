@@ -1,9 +1,9 @@
-# UniversitiesAPI
+# Databank of Universities
 
-UniversitiesAPI adalah sebuah aplikasi berbasis web API yang memberikan akses kepada siapa pun untuk mengakses data universitas di seluruh Indonesia. Aplikasi ini dirancang untuk membantu para pengembang dan pihak tertentu yang ingin mengintegrasikan informasi universitas ke dalam proyek mereka.
+Databank of Universities adalah sebuah aplikasi berbasis web API yang memberikan akses kepada siapa pun untuk mengakses data universitas di seluruh Indonesia. Aplikasi ini dirancang untuk membantu para pengembang dan pihak tertentu yang ingin mengintegrasikan informasi universitas ke dalam proyek mereka.
 
 ## Deskripsi
-UniversitiesAPI menyediakan data lengkap tentang berbagai universitas di Indonesia. Dengan menggunakan API ini, pengguna dapat mengakses informasi seperti nama universitas, lokasi, akreditasi, dan informasi relevan lainnya. Aplikasi ini diharapkan dapat menjadi sumber daya yang bermanfaat bagi pengembang yang ingin mengembangkan sistem atau proyek dengan mengintegrasikan data universitas.
+Databank of Universities menyediakan data lengkap tentang berbagai universitas di Indonesia. Dengan menggunakan API ini, pengguna dapat mengakses informasi seperti nama universitas, lokasi, akreditasi, dan informasi relevan lainnya. Aplikasi ini diharapkan dapat menjadi sumber daya yang bermanfaat bagi pengembang yang ingin mengembangkan sistem atau proyek dengan mengintegrasikan data universitas.
 
 ## Fitur Utama
 - **Nama Aplikasi:** Databank of Universities
@@ -53,6 +53,6 @@ Bagi Anda yang ingin berkontribusi pada pengembangan aplikasi ini, silakan ikuti
 5. **Kontribusi:** Setelah mengikuti langkah-langkah di atas, Anda dapat mulai berkontribusi dengan membuat perubahan, menambahkan fitur baru, atau melaporkan masalah yang ditemukan. Harap ikuti panduan kontribusi yang telah ditentukan di repositori.
 
 ## Tujuan
-UniversitiesAPI bertujuan untuk memberikan dukungan kepada para pengembang dan pihak-pihak tertentu yang memerlukan akses mudah dan cepat ke data universitas di Indonesia. Dengan kontribusi dari komunitas, kami berharap aplikasi ini dapat terus berkembang dan memberikan manfaat yang lebih besar bagi masyarakat pengguna.
+Databank of Universities bertujuan untuk memberikan dukungan kepada para pengembang dan pihak-pihak tertentu yang memerlukan akses mudah dan cepat ke data universitas di Indonesia. Dengan kontribusi dari komunitas, kami berharap aplikasi ini dapat terus berkembang dan memberikan manfaat yang lebih besar bagi masyarakat pengguna.
 
 Terima kasih atas kontribusi dan dukungan Anda!
