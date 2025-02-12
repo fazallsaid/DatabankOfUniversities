@@ -5,7 +5,7 @@
 
     <!-- Main content -->
     <main class="flex-1 overflow-y-auto bg-white pl-64 pt-16">
-        <div class="max-w-4xl px-4 py-8 sm:px-6 lg:px-8">
+        <div class="max-w-4xl px-4 pt-[2rem] pb-[6rem] sm:px-6 lg:px-8">
             <h1 class="text-3xl font-bold text-gray-900">How to Contribute</h1>
 
             <div class="mt-6 prose prose-slate max-w-none">
@@ -38,6 +38,7 @@
                         <i class="fa fa-copy"></i>
                     </button>
                 </div>
+                <p class="text-gray-600 mb-5">Having followed the steps outlined above, you are now welcome to contribute by submitting changes, developing new features, or reporting any bugs or issues you encounter.  Kindly adhere to the contribution guidelines detailed within this repository.</p>
             </div>
             <script>
                 function copyToClipboard(id) {
