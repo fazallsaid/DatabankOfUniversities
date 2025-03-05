@@ -19,6 +19,7 @@
             <ul class="mt-2 space-y-2">
                 <li><a href="{{url('docs')}}" class="text-gray-800 hover:bg-blue-700 pt-1 pb-1 pl-[1rem] pr-[1rem] rounded-xl hover:text-white {{ request()->is('docs') ? 'bg-blue-700 text-white pt-1 pb-1 pl-[1rem] pr-[1rem] rounded-xl' : '' }}">Overview</a></li>
                 <li><a href="{{url('docs/usage')}}" class="text-gray-800 hover:bg-blue-700 pt-1 pb-1 pl-[1rem] pr-[1rem] rounded-xl hover:text-white {{ request()->is('docs/usage') ? 'bg-blue-700 text-white pt-1 pb-1 pl-[1rem] pr-[1rem] rounded-xl' : '' }}">Usage</a></li>
+                <li><a href="{{url('docs/data')}}" class="text-gray-800 hover:bg-blue-700 pt-1 pb-1 pl-[1rem] pr-[1rem] rounded-xl hover:text-white {{ request()->is('docs/data') ? 'bg-blue-700 text-white pt-1 pb-1 pl-[1rem] pr-[1rem] rounded-xl' : '' }}">Collected Data</a></li>
             </ul>
         </div>
     </nav>
