@@ -18,6 +18,19 @@ return new class extends Migration
             $table->string('university_address');
             $table->timestamps();
         });
+
+        Schema::create('user', function (Blueprint $table) {
+            $table->increments('user_id');
+            $table->string('username');
+            $table->string('email');
+            $table->text('password');
+            $table->string('f_name');
+            $table->string('l_name');
+            $table->text('location');
+            $table->string('job_role');
+            $table->enum('role', ['administrator','contributor','coders']);
+            $table->timestamps();
+        });
     }
 
     /**
@@ -26,5 +39,6 @@ return new class extends Migration
     public function down(): void
     {
         Schema::dropIfExists('university');
+        Schema::dropIfExists('user');
     }
 };
