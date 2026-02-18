@@ -1,9 +1,5 @@
-﻿university_id,university_name,university_acronym,university_address,created_at,updated_at
-1,Universitas Gadjah Mada,UGM,"Bulaksumur, Caturtunggal, Kec. Depok, Kab.Sleman, DI Yogyakarta",11/30/2023 3:56,11/30/2023 4:42
-2,Universitas Indonesia,UI,"Jl. Margonda Raya, Pondok Cina, Kec. Beji, Kota Depok, Jawa Barat",11/30/2023 3:59,11/30/2023 3:59
-3,Universitas Airlangga,UNAIR,"Jl. Airlangga No.4 - 6, Airlangga, Kec. Gubeng, Kota Surabaya, Jawa Timur",11/30/2023 4:00,11/30/2023 4:00
-4,Universitas Hasanuddin,UNHAS,"Jl. Perintis Kemerdekaan No. Km 10, Tamalanrea Indah, Kec. Tamalanrea, Kota Makassar, Sulawesi Selatan",11/30/2023 4:01,11/30/2023 11:05
-6,Universitas Andalas,UNAND,"Limau Manis, Kec. Pauh, Kota Padang, Sumatera Barat",11/30/2023 11:06,11/30/2023 11:06
-7,Universitas Padjadjaran,UNPAD,"Jl. Raya Bandung Sumedang KM.21, Hegarmanah, Jatinangor, Kab. Sumedang, Jawa Barat",12/2/2023 3:03,12/2/2023 3:03
-8,Universitas Diponegoro,UNDIP,"Jl. Prof. Sudarto No.13, Tembalang, Kec. Tembalang, Kota Semarang, Jawa Tengah",12/2/2023 3:08,12/2/2023 3:08
-9,Universitas Sriwijaya,UNSRI,"Jl. Masjid Al Gazali, Bukit Lama, Kec. Ilir Bar. I, Kota Palembang, Sumatera Selatan",12/2/2023 4:15,12/2/2023 4:15
+﻿university_id,university_name,university_acronym,university_address,university_acreditation,university_website,user_id,created_at,updated_at
+1,Universitas Islam Negeri Sunan Kalijaga,UINSUKA,"Jl. Laksda Adisucipto, Papringan, Caturtunggal, Kec. Depok, Kabupaten Sleman, Daerah Istimewa Yogyakarta 55281",Unggul,www.uin-suka.ac.id,1,4/3/2025 22:58,4/3/2025 22:58
+2,Universitas Medika Suherman,UMS,"Jalan Raya Industri Pasir Gombong, Jababeka, Pasirgombong, Kec. Cikarang Utara, Kabupaten Bekasi, Jawa Barat 17530",B,www.medikasuherman.ac.id,1,4/3/2025 22:58,4/3/2025 22:58
+4,"Sekolah Tinggi Perpajakan Indonesia",STPI,"Jl. Matraman Raya No.27 2, RT.2/RW.1, Palmeriam, Kec. Matraman, Kota Jakarta Timur, Daerah Khusus Ibukota Jakarta 13140",B,www.stpi-pajak.ac.id,2,"2025-04-03 23:23:18","2025-04-03 23:23:18"
+5,"Universitas Negeri Manado",UNIMA,"Jl. Kampus Unima, Tonsaru, Kec. Tondano Sel., Kabupaten Minahasa, Sulawesi Utara 95618",B,www.unima.ac.id,1,"2025-04-07 18:35:33","2025-04-07 18:35:33"

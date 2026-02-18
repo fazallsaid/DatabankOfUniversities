@@ -1,7 +1,7 @@
 @include('partials.head')
     <main class="container mx-auto px-6 py-12 flex-grow">
         <section class="flex flex-col items-center justify-center h-full">
-            <model-viewer src="{{asset('object/toga.glb')}}" alt="3D model of a university" auto-rotate auto-rotate-delay="0" rotation-per-second="30deg" style="width: 400px; height: 400px;"></model-viewer>
+            <img src="{{asset('images/icons/dou_vert.png')}}" class="w-[22rem] pb-[2rem] pt-[2rem]" />
             <h1 class="text-4xl font-bold text-gray-800 mb-4">Welcome to Databank of Universities</h1>
             <p class="text-xl text-gray-600 mb-8">Get all the information you need about all universities of Indonesia.</p>
             <div class="flex space-x-4 mb-8">

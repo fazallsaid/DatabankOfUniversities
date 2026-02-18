@@ -5,6 +5,12 @@ Databank of Universities adalah sebuah aplikasi berbasis web API yang memberikan
 ## Deskripsi
 Databank of Universities menyediakan data lengkap tentang berbagai universitas di Indonesia. Dengan menggunakan API ini, pengguna dapat mengakses informasi seperti nama universitas, lokasi, akreditasi, dan informasi relevan lainnya. Aplikasi ini diharapkan dapat menjadi sumber daya yang bermanfaat bagi pengembang yang ingin mengembangkan sistem atau proyek dengan mengintegrasikan data universitas.
 
+## Preview / Screenshot
+Berikut adalah cuplikan tampilan dari aplikasi ini:
+![University List](public/images/databank_of_university_thumbnail.png)
+![University Detail](public/images/databank_of_university_thumbnail_1.png)
+![University Search](public/images/databank_of_university_thumbnail_2.png)
+
 ## Fitur Utama
 - **Nama Aplikasi:** Databank of Universities
 - **Basis Aplikasi:** Web API

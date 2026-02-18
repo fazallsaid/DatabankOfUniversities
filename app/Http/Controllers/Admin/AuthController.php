@@ -10,6 +10,10 @@ use Illuminate\Support\Facades\Hash;
 class AuthController extends Controller
 {
     public function indexLogin(){
+        $session = session('users');
+        if($session == true){
+            return redirect('account/dashboard');
+        }
         $title = "Login / Databank of Universities";
 
         $data = [
@@ -24,23 +28,23 @@ class AuthController extends Controller
             'password' => 'required'
         ]);
 
-        $userCheck = Users::where('username', $validatedData['usermail'])->where('email', $validatedData['usermail'])->first();
+        $userCheck = Users::where('username', $validatedData['usermail'])->orWhere('email', $validatedData['usermail'])->first();
 
         if($userCheck && Hash::check($validatedData['password'], $userCheck->password)){
             $request->session()->put('userid', $userCheck->user_id);
+            $request->session()->put('users', true);
 
             if($userCheck->role == "administrator"){
-                $request->session()->put('userAdmin', true);
                 $request->session()->put('userRole', $userCheck->role);
             }else if($userCheck->role == "contributor"){
-                $request->session()->put('userContributor', true);
                 $request->session()->put('userRole', $userCheck->role);
             }else{
-                $request->session()->put('userCoders', true);
                 $request->session()->put('userRole', $userCheck->role);
             }
-
-            return redirect('dashboard');
+            toastr()->success("You've successfully logged in!","WELCOME!");
+            return redirect('account/dashboard');
+        }else{
+            return redirect('account/signin');
         }
     }
 
@@ -51,5 +55,11 @@ class AuthController extends Controller
             'title' => $title
         ];
         return view('auth.register', $data);
+    }
+
+    function logout(){
+        session()->forget(['users', 'userid', 'userRole']);
+        toastr()->success("You've successfully logout. Thank you for contributing!", "BYE!");
+        return redirect('account/signin');
     }
 }

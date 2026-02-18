@@ -13,10 +13,13 @@ class University extends Model
     protected $table = 'university';
 
     protected $primaryKey = 'university_id';
-    
+
     protected $fillable = [
         'university_name',
         'university_acronym',
         'university_address',
+        'university_acreditation',
+        'university_website',
+        'user_id'
     ];
 }

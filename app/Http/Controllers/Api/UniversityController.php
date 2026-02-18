@@ -9,8 +9,8 @@ use App\Models\University;
 class UniversityController extends Controller
 {
    function get_all(){
-    $univ = University::all();
-    $univcount = University::all()->count();
+    $univ = University::join('user','user.user_id','=','university.user_id')->select('*')->get();
+    $univcount = University::join('user','user.user_id','=','university.user_id')->count();
 
     if($univcount > 0){
     return response()->json([
@@ -27,25 +27,61 @@ class UniversityController extends Controller
    }
 
    function add_university(Request $request){
-    $university_name = $request->input('university_name');
-    $university_acronym = $request->input('university_acronym');
-    $university_address = $request->input('university_address');
-
-    $univ = new University([
-        'university_name' => $university_name,
-        'university_acronym' => $university_acronym,
-        'university_address' => $university_address,
+    $validatedData = $request->validate([
+        'university_name' => 'required',
+        'university_acronym' => 'required',
+        'university_address' => 'required',
+        'university_acreditation' => 'required',
+        'university_website' => 'required',
+        'user_id' => 'required|integer'
     ]);
 
-    $univ->save();
-    
-    return response()->json([
-        'success' => true,
-        'message' => 'Universitas Berhasil Ditambahkan',
-        'data' => $univ,
-    ], 200);
-    $linked = "http://127.0.0.1/php_biasa";
-    return redirect($linked);
+    $univ = University::create($validatedData);
+
+    if($univ){
+        // Add data to CSV file
+        $csvFile = database_path('csv/seeder.csv');
+
+        // Get current row count from CSV
+        $rowCount = 0;
+        if (file_exists($csvFile)) {
+            $fp = fopen($csvFile, 'r');
+            while(fgetcsv($fp)) {
+                $rowCount++;
+            }
+            fclose($fp);
+        }
+
+        // Set timezone to Asia/Jakarta
+        date_default_timezone_set('Asia/Jakarta');
+
+        $csvData = [
+            $rowCount + 1, // Add sequential number
+            $univ->university_name,
+            $univ->university_acronym,
+            $univ->university_address,
+            $univ->university_acreditation,
+            $univ->university_website,
+            $univ->user_id,
+            date('Y-m-d H:i:s'), // created_at
+            date('Y-m-d H:i:s')  // updated_at
+        ];
+
+        $fp = fopen($csvFile, 'a');
+        fputcsv($fp, $csvData);
+        fclose($fp);
+
+        return response()->json([
+            'success' => true,
+            'message' => 'Universitas Berhasil Ditambahkan',
+            'data' => $univ,
+        ], 200);
+    }else{
+        return response()->json([
+            'status' => 'success',
+            'info' => 'Universitas gagal ditambahkan.'
+        ], 400);
+    }
    }
 
    function update_university(Request $request, $id){
@@ -58,7 +94,7 @@ class UniversityController extends Controller
         $univid->university_name = $university_name;
         $univid->university_acronym = $university_acronym;
         $univid->university_address = $university_address;
-        
+
         $univid->save();
 
         return response()->json([

@@ -8,13 +8,13 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
 <!-- Favicon icon-->
-<link rel="shortcut icon" type="image/png" href="{{asset('images/icons/university.svg')}}" />
+<link rel="shortcut icon" type="image/png" href="{{asset('images/icons/toga.png')}}" />
 <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap"
   rel="stylesheet" />
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@tabler/icons-webfont@2.44.0/tabler-icons.min.css">
 <!-- Core Css -->
 <link rel="stylesheet" href="{{asset('assets/css/theme.css')}}" />
-	<title>Login / Databank of Universities</title>
+	<title>{{$title}}</title>
 </head>
 
 <body class="DEFAULT_THEME ">
@@ -24,10 +24,11 @@
 
                     <div class="justify-center items-center w-full card lg:flex max-w-md ">
                         <div class=" w-full card-body">
-                                <a href="#" class="py-4 block"><img src="{{asset('images/icons/university.svg')}}" alt="" class="mx-auto" width="30%"/></a>
+                                <a href="#" class="py-4 block"><img src="{{asset('images/icons/dou_vert.png')}}" alt="" class="mx-auto" width="50%"/></a>
                                 <p class="mb-4 text-gray-400 text-lg text-center">Login to Databank of Universities</p>
                             <!-- form -->
-                            <form>
+                            <form action="{{url('account/signin/check')}}" method="POST">
+                                @csrf
                                 <!-- username -->
                                 <div class="mb-4">
                                     <label for="forUsername"
@@ -51,12 +52,12 @@
                                   </div>
                                     <!-- button -->
                                       <div class="grid my-6">
-                                        <a href="#" class="btn py-[10px] text-base text-white font-medium hover:bg-blue-700">Sign In</a>
+                                        <button type="submit" class="btn py-[10px] text-base text-white font-medium hover:bg-blue-700">Sign In</button>
                                       </div>
 
                                       <div class="flex justify-center gap-2 items-center">
                                         <p class="text-base font-semibold text-gray-400">Are you data contributor?</p>
-                                        <a href="#" class="text-sm font-semibold text-blue-600 hover:text-blue-700">Create an account here</a>
+                                        <a href="{{url('signup')}}" class="text-sm font-semibold text-blue-600 hover:text-blue-700">Create an account here</a>
                                     </div>
                                 </div>
                             </form>

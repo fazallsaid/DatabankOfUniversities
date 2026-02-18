@@ -24,7 +24,10 @@ class UniversitySeeder extends Seeder
                     "university_id" => $data['0'],
                     "university_name" => $data['1'],
                     "university_acronym" => $data['2'],
-                    "university_address" => $data['3']
+                    "university_address" => $data['3'],
+                    "university_acreditation" => $data['4'],
+                    "university_website" => $data['5'],
+                    "user_id" => $data['6']
                 ]);
             }
             $firstline = false;

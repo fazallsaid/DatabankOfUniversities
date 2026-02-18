@@ -16,6 +16,9 @@ return new class extends Migration
             $table->string('university_name');
             $table->string('university_acronym');
             $table->string('university_address');
+            $table->string('university_acreditation');
+            $table->string('university_website');
+            $table->integer('user_id');
             $table->timestamps();
         });
 
