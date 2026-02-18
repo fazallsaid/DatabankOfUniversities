@@ -18,8 +18,8 @@ Berikut adalah cuplikan tampilan dari aplikasi ini:
 
 ## Teknologi
 
-* PHP 8.1+
-* Laravel Framework 10.10+
+* PHP 8.3+
+* Laravel Framework 11.x
 * Tailwind CSS
 * MySQL
 
@@ -56,13 +56,9 @@ Berikut adalah cuplikan tampilan dari aplikasi ini:
     php artisan migrate --seed
     ```
 
-7.  **Install dependensi Node.js & Build Aset:**
-    ```bash
-    npm install
-    npm run dev
-    ```
 
-8.  **Jalankan server development:**
+
+7.  **Jalankan server development:**
     ```bash
     php artisan serve
     ```
